@@ -1,0 +1,204 @@
+@keyframes image-start {
+  from {
+    transform: scale(0);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+html {
+  background-image: url(/portafolio/img/tokyo.jpg);
+  background-size: cover;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif; }
+
+body {
+  background-color: rgba(68, 68, 68, 0.788);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px black;
+  animation: image-start 0.5s; }
+  body .information-title, body .projects-title, body .contact-title, body .footer-title {
+    padding-left: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: blanchedalmond;
+    align-content: center;
+    text-shadow: 0px 0px 2px black;
+    animation: image-start 1.25s; }
+  body .information-title:hover, body .projects-title:hover, body .contact-title:hover, body .footer-title:hover {
+    text-shadow: 0px 0px 10px;
+    transition: 1s; }
+  body .contact-title, body .footer-title {
+    text-align: center; }
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: auto; }
+  .profile-container .profile-image {
+    width: 400px;
+    height: 400px;
+    animation: image-start 1.25s; }
+    .profile-container .profile-image img {
+      border: 5px solid #333333;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0px 0px 10px; }
+    .profile-container .profile-image img:hover {
+      transition: 1s;
+      box-shadow: 0px 0px 10px blanchedalmond; }
+  .profile-container .profile-name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: blanchedalmond;
+    align-content: center;
+    text-shadow: 0px 0px 2px;
+    animation: image-start 1.25s; }
+  .profile-container .profile-name:hover {
+    text-shadow: 0px 0px 10px;
+    transition: 1s; }
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px; }
+  .main-section .main-info {
+    color: blanchedalmond;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #222222;
+    margin: 10px;
+    box-shadow: 0px 0px 5px black;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    animation: image-start 1.5s; }
+  .main-section .main-tech {
+    color: blanchedalmond;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #222222;
+    margin: 10px;
+    box-shadow: 0px 0px 5px black;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    animation: image-start 1.75s; }
+
+.main-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation: image-start 1.75s; }
+  .main-projects .mlbike {
+    color: blanchedalmond;
+    background: #222222;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black; }
+  .main-projects .podcast {
+    color: blanchedalmond;
+    background: #222222;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black; }
+  .main-projects .writer {
+    color: blanchedalmond;
+    background: #222222;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black; }
+
+.main-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation: image-start 1.75s; }
+  .main-contact .contact-form {
+    color: blanchedalmond;
+    background: #222222;
+    padding: 40px;
+    margin: 10px;
+    border: 2px solid #141414;
+    border-top: 10px solid #141414;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black; }
+    .main-contact .contact-form form {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 10px; }
+      .main-contact .contact-form form input {
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background: blanchedalmond;
+        box-shadow: 0px 0px 10px black; }
+      .main-contact .contact-form form .text:hover {
+        box-shadow: 0px 0px 10px #ffebcd;
+        transition: 0.5s; }
+      .main-contact .contact-form form .text:focus {
+        transform: scale(1.1);
+        background: #b4ffff;
+        box-shadow: 0px 0px 10px black;
+        transition: 0.5s; }
+      .main-contact .contact-form form .submit {
+        background: #b0003a;
+        color: white; }
+      .main-contact .contact-form form .submit:hover {
+        color: white;
+        background: #e91e63;
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px blanchedalmond;
+        transition: 0.5s; }
+
+footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  footer .acamica {
+    width: 8%;
+    height: 190px; }
+    footer .acamica img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain; }
+  footer .html {
+    width: 8%;
+    height: 190px; }
+    footer .html img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain; }
+  footer .css3 {
+    width: 8%;
+    height: 190px; }
+    footer .css3 img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain; }
+  footer .sass {
+    padding-top: 30px;
+    width: 8%;
+    height: 190px; }
+    footer .sass img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain; }
+
+/*# sourceMappingURL=style.css.map */
