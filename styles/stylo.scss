@@ -19,6 +19,12 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 20px black;
     animation: image-start 0.5s;
+    .main-container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
     .information-title, .projects-title, .contact-title, .footer-title {
         padding-left: 30px;
         font-family: 'Bebas Neue', cursive;
@@ -43,8 +49,8 @@ body {
     padding: 10px;
     margin: auto;
     .profile-image {
-        width: 400px;
-        height: 400px;
+        width: 40%;
+        height: 40%;
         animation: image-start 1.25s;
         img {
             border: 5px solid #333333;
@@ -81,7 +87,7 @@ body {
         font-size: 1.5rem;
         padding: 10px;
         background: rgb(34, 34, 34);
-        margin: 10px;
+        margin: 1%;
         box-shadow: 0px 0px 5px black;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
@@ -95,7 +101,7 @@ body {
         font-size: 1.5rem;
         padding: 10px;
         background: rgb(34, 34, 34);
-        margin: 10px;
+        margin: 1%;
         box-shadow: 0px 0px 5px black;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
@@ -113,7 +119,7 @@ body {
         color: blanchedalmond;
         background: rgb(34, 34, 34);
         padding: 10px;
-        margin: 10px;
+        margin: 1%;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
         border-radius: 5px;
@@ -123,7 +129,7 @@ body {
         color: blanchedalmond;
         background: rgb(34, 34, 34);
         padding: 10px;
-        margin: 10px;
+        margin: 1%;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
         border-radius: 5px;
@@ -133,7 +139,7 @@ body {
         color: blanchedalmond;
         background: rgb(34, 34, 34);
         padding: 10px;
-        margin: 10px;
+        margin: 1%;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
         border-radius: 5px;
@@ -149,7 +155,7 @@ body {
         color: blanchedalmond;
         background: rgb(34, 34, 34);
         padding: 40px;
-        margin: 10px;
+        margin: 1%;
         border: 2px solid rgb(20, 20, 20);
         border-top: 10px solid rgb(20, 20, 20);
         border-radius: 5px;
@@ -158,10 +164,10 @@ body {
             display: flex;
             flex-direction: column;
             padding: 10px;
-            margin: 10px;
+            margin: 1%;
             input {
                 padding: 10px;
-                margin: 10px;
+                margin: 1%;
                 border: none;
                 border-radius: 10px;
                 background: blanchedalmond;
@@ -192,7 +198,7 @@ body {
     }
 }
 footer {
-    margin: 10px;
+    margin: 1%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -224,13 +230,29 @@ footer {
         }
     }
     .sass {
-        padding-top: 30px;
+        padding-top: 20px;
         width: 8%;
         height: 190px;
         img {
             max-width: 100%;
             height: auto;
             object-fit: contain;
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .profile-container {
+        align-items: stretch;
+    }
+    .main-projects {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        .acamica, .html, .css3, .sass {
+            width: 20%;
+            height: 200px;
         }
     }
 }

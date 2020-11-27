@@ -16,6 +16,11 @@ body {
   border-radius: 5px;
   box-shadow: 0px 0px 20px black;
   animation: image-start 0.5s; }
+  body .main-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; }
   body .information-title, body .projects-title, body .contact-title, body .footer-title {
     padding-left: 30px;
     font-family: 'Bebas Neue', cursive;
@@ -37,8 +42,8 @@ body {
   padding: 10px;
   margin: auto; }
   .profile-container .profile-image {
-    width: 400px;
-    height: 400px;
+    width: 40%;
+    height: 40%;
     animation: image-start 1.25s; }
     .profile-container .profile-image img {
       border: 5px solid #333333;
@@ -70,7 +75,7 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     background: #222222;
-    margin: 10px;
+    margin: 1%;
     box-shadow: 0px 0px 5px black;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
@@ -82,7 +87,7 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     background: #222222;
-    margin: 10px;
+    margin: 1%;
     box-shadow: 0px 0px 5px black;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
@@ -98,7 +103,7 @@ body {
     color: blanchedalmond;
     background: #222222;
     padding: 10px;
-    margin: 10px;
+    margin: 1%;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
     border-radius: 5px;
@@ -107,7 +112,7 @@ body {
     color: blanchedalmond;
     background: #222222;
     padding: 10px;
-    margin: 10px;
+    margin: 1%;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
     border-radius: 5px;
@@ -116,7 +121,7 @@ body {
     color: blanchedalmond;
     background: #222222;
     padding: 10px;
-    margin: 10px;
+    margin: 1%;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
     border-radius: 5px;
@@ -131,7 +136,7 @@ body {
     color: blanchedalmond;
     background: #222222;
     padding: 40px;
-    margin: 10px;
+    margin: 1%;
     border: 2px solid #141414;
     border-top: 10px solid #141414;
     border-radius: 5px;
@@ -140,10 +145,10 @@ body {
       display: flex;
       flex-direction: column;
       padding: 10px;
-      margin: 10px; }
+      margin: 1%; }
       .main-contact .contact-form form input {
         padding: 10px;
-        margin: 10px;
+        margin: 1%;
         border: none;
         border-radius: 10px;
         background: blanchedalmond;
@@ -167,7 +172,7 @@ body {
         transition: 0.5s; }
 
 footer {
-  margin: 10px;
+  margin: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -193,12 +198,26 @@ footer {
       height: auto;
       object-fit: contain; }
   footer .sass {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 8%;
     height: 190px; }
     footer .sass img {
       max-width: 100%;
       height: auto;
       object-fit: contain; }
+
+@media screen and (max-width: 760px) {
+  .profile-container {
+    align-items: stretch; }
+
+  .main-projects {
+    flex-direction: column; }
+
+  footer {
+    flex-direction: column;
+    align-items: center; }
+    footer .acamica, footer .html, footer .css3, footer .sass {
+      width: 20%;
+      height: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
